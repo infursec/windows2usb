@@ -23,6 +23,11 @@ The program prints removable storage list if no arguments supplied.
 
 If you don't want to use AppImage, you'll need to install all dependencies and download [uefi-ntfs.img](https://github.com/pbatard/rufus/tree/master/res/uefi) from Rufus project.
 
+## Dependencies
+You need to install p7zip and ms-sys before running tool
+Install in Arch:
+`sudo pacman -S p7zip` //install 7z
+`git clone https://aur.archlinux.org/ms-sys.git && cd ms-sys && makepkg -si` //install ms-sys
 ### BIOS Boot
 
 BIOS Boot (Legacy Boot/UEFI-CSM) uses stock Windows 7 MBR and NTFS bootloader, courtesy of [ms-sys](http://ms-sys.sourceforge.net/) project.
